@@ -1,5 +1,5 @@
 {
-    "cSpell.words": [
-        "frontmatter"
-    ]
+    "workbench.colorCustomizations": {
+        "tab.unfocusedActiveBorder": "#fff0"
+    }
 }
