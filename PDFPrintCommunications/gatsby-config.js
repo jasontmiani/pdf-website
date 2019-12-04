@@ -1,4 +1,6 @@
+// @ts-ignore
 const urljoin = require("url-join");
+// @ts-ignore
 const path = require("path");
 const config = require("./data/SiteConfig");
 
@@ -14,7 +16,7 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/logos/logo-512.png`,
+      )}/logos/logo-pdfpc.png`,
       copyright: config.copyright
     }
   },
@@ -25,6 +27,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "assets",
+        // @ts-ignore
         path: `${__dirname}/static/`
       }
     },
@@ -32,6 +35,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
+        // @ts-ignore
         path: `${__dirname}/content/`
       }
     },
@@ -83,12 +87,12 @@ module.exports = {
         display: "minimal-ui",
         icons: [
           {
-            src: "/logos/logo-192.png",
+            src: "/logos/logo-pdfpc.png",
             sizes: "192x192",
             type: "image/png"
           },
           {
-            src: "/logos/logo-512.png",
+            src: "/logos/logo-pdfpc.png",
             sizes: "512x512",
             type: "image/png"
           }
